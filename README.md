@@ -12,11 +12,11 @@ Regresi logistik merupakan salah satu alat statistik yang dapat digunakan dalam 
 2. Sistem perawatan kesehatan sering kali terbatas dalam hal sumber daya dan waktu. Dengan alat prediksi diabetes, kita dapat mengidentifikasi individu yang berisiko tinggi, sehingga sumber daya dan perawatan dapat dialokasikan dengan lebih efisien.
 3. Dengan mengidentifikasi individu yang berisiko, kita dapat memberikan informasi pencegahan dan perawatan dini yang dapat mengurangi risiko komplikasi diabetes yang serius, seperti penyakit jantung, gagal ginjal, dan gangguan mata.
 
-**Cara penyelesaian masalah :**
+**Cara penyelesaian masalah :** <br>
 Cara menyelesaikannya adalah melalui penggunaan data mining dan analisis data yang mendalam. Dengan memanfaatkan data historis dan faktor-faktor yang relevan seperti riwayat kesehatan, genetika, pola makan, dan gaya hidup, kita dapat membangun model prediksi diabetes yang dapat mengklasifikasikan individu sebagai berisiko diabetes atau tidak. Ini akan membantu dalam pencegahan, manajemen, dan pengelolaan penyakit ini secara lebih efektif.
 Untuk memprediksi penyakit diabetes menggunakan algoritma logistic regression, kita memerlukan data yang sesuai, seperti data medis dan faktor resiko yang relevan.
-  Referensi :
-  [Prediksi Risiko Penyakit Diabetes menggunakan Algoritma Regresi Logistik](https://journal.literasisains.id/index.php/jomlai/article/view/598/470)
+Referensi :
+[Prediksi Risiko Penyakit Diabetes menggunakan Algoritma Regresi Logistik](https://journal.literasisains.id/index.php/jomlai/article/view/598/470)
 
 ## Business Understanding
 Tujuan bisnis dari proyek ini adalah untuk memanfaatkan data mining guna memprediksi apakah seseorang berisiko menderita diabetes atau tidak. Informasi ini dapat digunakan untuk penyuluhan kesehatan, pencegahan, dan perawatan yang lebih tepat sasaran.
