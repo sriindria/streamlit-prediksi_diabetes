@@ -142,4 +142,6 @@ F1 Score merupakan perhitungan untuk mengetahui rata-rata dari perbandingan pres
   >***Hasil yang didapatkan ialah 60%***
 
 **Hasil evaluasi secara keseluruhan sudah cukup baik.**
-[Streamlit Link](link)
+
+## Deployment
+[Streamlit Link Prediksi Diabetes](https://app-prediksidiabetes-bysriindriaaa.streamlit.app/)
