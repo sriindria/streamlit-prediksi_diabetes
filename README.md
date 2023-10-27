@@ -53,7 +53,7 @@ Variabel-variabel pada dataset [Predict Diabetes](https://www.kaggle.com/dataset
 | 8. | Age | Int | Merupakan usia seseorang. |
 | 9. | Outcome | Int | Merupakan status diabetes seseorang.<br> 0 : tidak menderita diabetes (negatif),<br> 1 : menderita diabetes (positif). |
 
-**Visualisasi Data**
+**Visualisasi Data**<br>
 Beberapa hasil visualisasi data :
 ![Gambar1](img/1.png)
 ![Gambar2](img/2.png)
