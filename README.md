@@ -144,6 +144,6 @@ F1-Skor adalah ukuran gabungan yang mempertimbangkan presisi dan recall. Ini ber
 **Hasil evaluasi secara keseluruhan sudah cukup baik.**
 
 ## Deployment
-Coba sekarang, disini =>
+Coba sekarang, disini : 
 [Streamlit Link Prediksi Diabetes](https://app-prediksidiabetes-bysriindriaaa.streamlit.app/)
 
