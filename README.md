@@ -82,17 +82,17 @@ model.fit(X_train, Y_train)
 
 **Kelebihan dan Kekurangan Modeling Learning Regression**:
 - Kelebihan Logistic Regression:
-  - Interpretasi yang Mudah: Hasil dari model logistic regression dapat diinterpretasikan dengan relatif mudah. Koefisien untuk setiap variabel dapat digunakan untuk memahami pengaruh relatifnya terhadap prediksi diabetes.
-  - Cocok untuk Data Biner: Model ini cocok untuk masalah klasifikasi biner, seperti prediksi diabetes atau tidak diabetes. Ini memberikan hasil berupa probabilitas klasifikasi.
-  - Efisien untuk Data Besar: Logistic regression adalah model yang efisien dan dapat menangani dataset yang cukup besar dengan cepat.
-  - Tidak Memerlukan Asumsi Normalitas: Model ini tidak bergantung pada asumsi normalitas data, sehingga dapat digunakan untuk berbagai jenis data.
+  - Hasil dari model logistic regression dapat diinterpretasikan dengan relatif mudah. Koefisien untuk setiap variabel dapat digunakan untuk memahami pengaruh relatifnya terhadap prediksi diabetes.
+  - Model ini cocok untuk masalah klasifikasi biner, seperti prediksi diabetes atau tidak diabetes. Ini memberikan hasil berupa probabilitas klasifikasi.
+  - Logistic regression adalah model yang efisien dan dapat menangani dataset yang cukup besar dengan cepat.
+  - Model ini tidak bergantung pada asumsi normalitas data, sehingga dapat digunakan untuk berbagai jenis data.
 - Kekurangan Logistic Regression:
-  - Linearitas: Model logistic regression hanya dapat menangani hubungan linear antara variabel independen dan variabel dependen. Jika hubungan tidak linear, model ini mungkin tidak akurat.
-  - Keterbatasan dalam Penanganan Variabel Kategori: Jika terdapat banyak variabel kategori dengan banyak kategori, model ini mungkin tidak efisien. Penggunaan one-hot encoding dapat memunculkan masalah multikolinearitas.
-  - Asumsi Independensi: Model ini mengasumsikan independensi antara observasi, yang mungkin tidak selalu terpenuhi dalam data deret waktu atau data yang terkait.
-  - Kesulitan Menangani Missing Values: Jika terdapat banyak data yang hilang, penanganannya dalam logistic regression dapat menjadi rumit.
-  - Tidak Selalu Optimal untuk Kinerja Tinggi: Untuk beberapa masalah klasifikasi yang sangat kompleks, model logistic regression mungkin tidak memberikan performa yang sebaik model machine learning yang lebih kompleks.
-  - Klasifikasi Ketat: Logistic regression memiliki batasan dalam memodelkan klasifikasi yang sangat ketat, di mana batasan keputusan yang sempit diperlukan.
+  - Model logistic regression hanya dapat menangani hubungan linear antara variabel independen dan variabel dependen. Jika hubungan tidak linear, model ini mungkin tidak akurat.
+  - Jika terdapat banyak variabel kategori dengan banyak kategori, model ini mungkin tidak efisien. Penggunaan one-hot encoding dapat memunculkan masalah multikolinearitas.
+  - Model ini mengasumsikan independensi antara observasi, yang mungkin tidak selalu terpenuhi dalam data deret waktu atau data yang terkait.
+  - Jika terdapat banyak data yang hilang, penanganannya dalam logistic regression dapat menjadi rumit.
+  - Untuk beberapa masalah klasifikasi yang sangat kompleks, model logistic regression mungkin tidak memberikan performa yang sebaik model machine learning yang lebih kompleks.
+  - Logistic regression memiliki batasan dalam memodelkan klasifikasi yang sangat ketat, di mana batasan keputusan yang sempit diperlukan.
 
 ## Evaluation
 Evaluation dilakukan dengan menghitung nilai-nilai pada metrik akurasi, presisi, recall, dan f1-score. Metriks tersebut digunakan untuk menentukan apakah model mempunyai performa yang baik atau tidak.
@@ -145,3 +145,4 @@ F1-Skor adalah ukuran gabungan yang mempertimbangkan presisi dan recall. Ini ber
 
 ## Deployment
 [Streamlit Link Prediksi Diabetes](https://app-prediksidiabetes-bysriindriaaa.streamlit.app/)
+
