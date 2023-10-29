@@ -96,7 +96,7 @@ model.fit(X_train, Y_train)
 
 ## Evaluation
 Evaluation dilakukan dengan menghitung nilai-nilai pada metrik akurasi, presisi, recall, dan f1-score. Metriks tersebut digunakan untuk menentukan apakah model mempunyai performa yang baik atau tidak.
-- ***Akurasi***
+- ***Akurasi***<br>
 Akurasi mengukur sejauh mana model benar dalam memprediksi baik kelas positif (diabetes) maupun kelas negatif (non-diabetes).
   - Akurasi data training
   ```python
@@ -124,7 +124,7 @@ Presisi merupakan perhitungan untuk mengetahui jumlah data yang benar positif da
   print('Presisi :', precision)
   ```
   >***Hasil yang didapatkan ialah 70%***
-- ***Recall***
+- ***Recall***<br>
 Recall mengukur sejauh mana model dapat mengidentifikasi semua kasus positif yang sebenarnya (diabetes).
   ```python
   recall=metrics.recall_score(Y_test,X_test_prediction)
@@ -132,7 +132,7 @@ Recall mengukur sejauh mana model dapat mengidentifikasi semua kasus positif yan
   print('Recall :', recall)
   ```
   >***Hasil yang didapatkan ialah 52%***
-- ***F1 score***
+- ***F1 score***<br>
 F1-Skor adalah ukuran gabungan yang mempertimbangkan presisi dan recall. Ini berguna ketika ingin mencapai keseimbangan antara ketepatan dan kemampuan model untuk mengidentifikasi semua kasus positif.
   ```python
   f1score=metrics.f1_score(X_test_prediction, Y_test)
