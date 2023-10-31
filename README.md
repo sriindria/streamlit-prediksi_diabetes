@@ -59,10 +59,10 @@ Beberapa hasil visualisasi data : <br>
 Heatmap diatas menunjukkan seberapa kuat hubungan korelasi antara setiap pasangan kolom dalam dataset.<br>
 <br>
 ![Gambar1](img/1.png)<br>
-Grafik pie chart (diagram lingkaran) diatas itu berdasarkan data yang disimpan dalam dataset. 0 itu menunjukkan hasil data yg tdk diabetes, 1 itu yg diabetesnya.<br>
+Grafik pie chart (diagram lingkaran) diatas itu berdasarkan data yang disimpan dalam dataset. 0 menunjukkan hasil data yang tidak diabetes, 1 menunjukan hasil data yang diabetes.<br>
 <br>
 ![Gambar2](img/2.png)<br>
-Scatter plot hasil visualisasikan hubungan antara dua variabel.<br>
+Scatter plot diatas merupakan hasil visualisasikan hubungan antara dua variabel.<br>
 x=df['Insulin']: Digunakan sebagai sumbu X dalam scatter plot. <br>
 y=df['Outcome']: Digunakan sebagai sumbu Y dalam scatter plot.<br>
 <br>
