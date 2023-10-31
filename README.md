@@ -54,10 +54,11 @@ Variabel-variabel pada dataset [Predict Diabetes](https://www.kaggle.com/dataset
 | 9. | Outcome | Int | Merupakan status diabetes seseorang.<br> 0 : tidak menderita diabetes (negatif),<br> 1 : menderita diabetes (positif). |
 
 **Visualisasi Data**<br>
-Beberapa hasil visualisasi data :
+Beberapa hasil visualisasi data : <br>
+![Gambar6](img/6.png)
 Heatmap diatas menunjukkan seberapa kuat hubungan korelasi antara setiap pasangan kolom dalam dataset.<br>
 ![Gambar1](img/1.png)
-Grafik pie chart (diagram lingkaran) diatas itu berdasarkan data yang disimpan dalam datasetnya. 0 itu menunjukkan hasil data yg tdk diabetes, 1 itu yg diabetesnya.<br>
+Grafik pie chart (diagram lingkaran) diatas itu berdasarkan data yang disimpan dalam dataset. 0 itu menunjukkan hasil data yg tdk diabetes, 1 itu yg diabetesnya.<br>
 ![Gambar2](img/2.png)
 Scatter plot hasil visualisasikan hubungan antara dua variabel.
 x=df['Insulin']: Digunakan sebagai sumbu X dalam scatter plot.
@@ -68,14 +69,13 @@ Hasil visualisasikan hubungan antara semua pasangan variabel dalam dataset dalam
 ## Data Preparation
 Penggunaan algoritma logistik regresi untuk prediksi penyakit diabetes, teknik persiapan data mencakup langkah-langkah yang saya lakukan ialah :
 1. Mencari dataset yang berisi informasi tentang pasien, termasuk variabel seperti usia, indeks massa tubuh (BMI), tingkat gula darah, riwayat keluarga, dll.
-2. Memilih fitur atau variabel yang paling relevan untuk prediksi penyakit diabetes.
-3. Membagi dataset menjadi dua bagian, yaitu data pelatihan (training data) dan data pengujian (testing data) untuk mengukur kinerja model. Biasanya, sekitar 70-80% data digunakan untuk pelatihan dan sisanya untuk pengujian.
-4. Membuat model dengan algoritma logistik regresi dan setel parameter-parameternya sesuai kebutuhan.
-5. Mengevaluasi data menggunakan data pengujian untuk mengukur kinerja model menggunakan metrik seperti akurasi, presisi, recall, F1-score.
-6. Mencoba model prediksi untuk mengecek hasilnya sesuai atau tidak.
-7. Pengeimplementasian model, setelah semuanya sesuai dan dievaluasi dengan baik, kita dapat menggunakannya untuk memprediksi penyakit diabetes pada data baru.
-
-Tahapan data preparation adalah dasar yang diperlukan untuk memastikan bahwa analisis data mining, seperti prediksi diabetes menggunakan algoritma logistik regresi dapat dilakukan dengan akurat dan hasil yang dapat diandalkan.
+2. Memvisualisasikan data untuk memilih fitur atau variabel yang paling relevan untuk prediksi penyakit diabetes.
+4. Membagi dataset menjadi dua bagian, yaitu data pelatihan (training data) dan data pengujian (testing data) untuk mengukur kinerja model.
+5. Membuat model dengan algoritma logistik regresi dan setel parameter-parameternya sesuai kebutuhan.
+6. Mengevaluasi data menggunakan data pengujian untuk mengukur kinerja model menggunakan metrik seperti akurasi, presisi, recall, F1-score.
+7. Mencoba model prediksi untuk mengecek hasilnya sesuai atau tidak.
+8. Pengeimplementasian model setelah semuanya sesuai dan dievaluasi dengan baik, dapat digunakan untuk memprediksi penyakit diabetes pada data baru.<br>
+Tahapan data preparation adalah dasar yang diperlukan untuk memastikan bahwa analisis data mining prediksi diabetes menggunakan algoritma logistik regresi dapat dilakukan dengan akurat dan hasil yang dapat diandalkan.
 
 ## Modeling Learning Regression
 Model machine learning regresi logistik adalah salah satu alat yang umum digunakan untuk memprediksi apakah seseorang mungkin mengalami diabetes atau tidak. Ini adalah model statistik yang menghubungkan variabel independen atau prediktor (faktor risiko diabetes) dengan variabel dependen (diabetes atau tidak) menggunakan fungsi logistik.
