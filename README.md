@@ -58,15 +58,15 @@ Beberapa hasil visualisasi data : <br>
 ![Gambar6](img/6.png)<br>
 Heatmap diatas menunjukkan seberapa kuat hubungan korelasi antara setiap pasangan kolom dalam dataset.<br>
 <br>
-![Gambar1](img/1.png)
+![Gambar1](img/1.png)<br>
 Grafik pie chart (diagram lingkaran) diatas itu berdasarkan data yang disimpan dalam dataset. 0 itu menunjukkan hasil data yg tdk diabetes, 1 itu yg diabetesnya.<br>
 <br>
-![Gambar2](img/2.png)
+![Gambar2](img/2.png)<br>
 Scatter plot hasil visualisasikan hubungan antara dua variabel.
 x=df['Insulin']: Digunakan sebagai sumbu X dalam scatter plot.
 y=df['Outcome']: Digunakan sebagai sumbu Y dalam scatter plot.<br>
 <br>
-![Gambar3](img/3.png)
+![Gambar3](img/3.png)<br>
 Hasil visualisasi hubungan antara semua pasangan variabel dalam dataset dalam bentuk matrix scatter plot, juga untuk membedakan data berdasarkan kolom 'Outcome' menggunakan warna.<br>
 
 ## Data Preparation
@@ -155,5 +155,6 @@ F1-Skor adalah ukuran gabungan yang mempertimbangkan presisi dan recall. Ini ber
 ## Deployment
 Coba sekarang, disini : 
 [Streamlit Link Prediksi Diabetes](https://app-prediksidiabetes-bysriindriaaa.streamlit.app/) <br>
+<br>
 ![Gambar7](img/interfaceapp.png)
 
