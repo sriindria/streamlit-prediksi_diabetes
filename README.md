@@ -26,13 +26,13 @@ Masalah utama yang ingin kita selesaikan adalah kesulitan dalam mengidentifikasi
 
 ### Goals
 - Mengimplementasikan algoritma regresi logistik untuk membangun model prediksi diabetes yang dapat mengklasifikasikan individu menjadi dua kelompok: berisiko diabetes atau tidak berisiko diabetes.
-- Menguji dan mengevaluasi kinerja model prediksi menggunakan metrik yang sesuai, seperti akurasi, presisi, recall dan F1.
+- Menguji dan mengevaluasi kinerja model prediksi menggunakan metrik akurasi, presisi, recall dan F1-score.
 - Meningkatkan kesadaran masyarakat tentang faktor risiko diabetes.
 - Memberikan informasi yang dapat membantu individu dan penyedia layanan kesehatan dalam mengambil langkah-langkah pencegahan dan perawatan yang sesuai.
 
     ### Solution statements
     - Solusi yang diusulkan adalah mengumpulkan dan membersihkan data kesehatan pasien yang mencakup faktor-faktor seperti usia, jenis kelamin, riwayat keluarga, indeks massa tubuh (BMI), pola makan, dan tingkat aktivitas fisik.
-    - Selanjutnya, kita akan menggunakan algoritma Regresi Logistik untuk mengembangkan model prediksi. Model ini akan diuji dengan dataset yang berbeda dan dievaluasi berdasarkan metrik akurasi, presisi, recall dan F1.
+    - Selanjutnya, kita akan menggunakan algoritma Regresi Logistik untuk mengembangkan model prediksi. Model ini akan diuji dengan dataset yang berbeda dan dievaluasi berdasarkan metrik akurasi, presisi, recall dan F1-score.
 
 ## Data Understanding
 Kumpulan data ini berasal dari National Institute of Diabetes and Digestive and Kidney Penyakit. Tujuan dari kumpulan data ini adalah untuk memprediksi secara diagnostik apakah seorang pasien menderita diabetes, berdasarkan pengukuran diagnostik tertentu yang termasuk dalam kumpulan data. Beberapa kendala ditempatkan pada pemilihan contoh ini dari database yang lebih besar. Secara khusus, semua pasien di sini adalah perempuan minimal berusia 21 tahun keturunan Indian Pima.
@@ -55,9 +55,15 @@ Variabel-variabel pada dataset [Predict Diabetes](https://www.kaggle.com/dataset
 
 **Visualisasi Data**<br>
 Beberapa hasil visualisasi data :
+Heatmap diatas menunjukkan seberapa kuat hubungan korelasi antara setiap pasangan kolom dalam dataset.<br>
 ![Gambar1](img/1.png)
+Grafik pie chart (diagram lingkaran) diatas itu berdasarkan data yang disimpan dalam datasetnya. 0 itu menunjukkan hasil data yg tdk diabetes, 1 itu yg diabetesnya.<br>
 ![Gambar2](img/2.png)
+Scatter plot hasil visualisasikan hubungan antara dua variabel.
+x=df['Insulin']: Digunakan sebagai sumbu X dalam scatter plot.
+y=df['Outcome']: Digunakan sebagai sumbu Y dalam scatter plot.<br>
 ![Gambar3](img/3.png)
+Hasil visualisasikan hubungan antara semua pasangan variabel dalam dataset dalam bentuk matrix scatter plot, juga membedakan data berdasarkan kolom 'Outcome' menggunakan warna.<br>
 
 ## Data Preparation
 Penggunaan algoritma logistik regresi untuk prediksi penyakit diabetes, teknik persiapan data mencakup langkah-langkah yang saya lakukan ialah :
