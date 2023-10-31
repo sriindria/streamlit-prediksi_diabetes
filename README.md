@@ -16,7 +16,7 @@ Regresi logistik merupakan salah satu alat statistik yang dapat digunakan dalam 
 Cara menyelesaikannya adalah melalui penggunaan data mining dan analisis data yang mendalam. Dengan memanfaatkan data historis dan faktor-faktor yang relevan seperti riwayat kesehatan, genetika, pola makan, dan gaya hidup, kita dapat membangun model prediksi diabetes yang dapat mengklasifikasikan individu sebagai berisiko diabetes atau tidak. Ini akan membantu dalam pencegahan, manajemen, dan pengelolaan penyakit ini secara lebih efektif.
 Untuk memprediksi penyakit diabetes menggunakan algoritma logistic regression, kita memerlukan data yang sesuai, seperti data medis dan faktor resiko yang relevan. <br>
 Referensi :<br>
-[Prediksi Risiko Penyakit Diabetes menggunakan Algoritma Regresi Logistik](https://journal.literasisains.id/index.php/jomlai/article/view/598/470)
+Jurnal : [Prediksi Risiko Penyakit Diabetes menggunakan Algoritma Regresi Logistik](https://journal.literasisains.id/index.php/jomlai/article/view/598/470)
 
 ## Business Understanding
 Tujuan bisnis dari proyek ini adalah untuk memanfaatkan data mining guna memprediksi apakah seseorang berisiko menderita diabetes atau tidak. Informasi ini dapat digunakan untuk penyuluhan kesehatan, pencegahan, dan perawatan yang lebih tepat sasaran.
@@ -88,12 +88,21 @@ Penggunaan algoritma logistik regresi untuk prediksi penyakit diabetes, teknik p
 3. Membersihkan data dengan mengecek nilai-nilai null untuk mengindentifikasi pola kekosongan atau kekurangan dalam dataset.
 4. Memvisualisasikan data untuk memilih fitur atau variabel yang paling relevan untuk prediksi penyakit diabetes.
 5. Memisahkan data atribut dengan label yang akan digunakan.
+   ```python
+   X = df.drop(columns='Outcome', axis=1)
+   Y = df['Outcome']
+   ```
 6. Membagi dataset menjadi dua bagian, yaitu data pelatihan (training data) dan data pengujian (testing data) untuk mengukur kinerja model.
-7. Membuat model dengan algoritma logistik regresi dan setel parameter-parameternya sesuai kebutuhan.
-8. Mengevaluasi data menggunakan data pengujian untuk mengukur kinerja model menggunakan metrik seperti akurasi, presisi, recall, F1-score.
-9. Mencoba model prediksi untuk mengecek hasilnya sesuai atau tidak.
-10. Pengeimplementasian model setelah semuanya sesuai dan dievaluasi dengan baik, dapat digunakan untuk memprediksi penyakit diabetes pada data baru.
-11. Menyimpan model menggunakan library pickle dengan format file 'sav'.
+   ```python
+   X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.2, stratify=Y, random_state=2)
+
+   print(X.shape, X_train.shape, X_test.shape)
+   ```
+8. Membuat model dengan algoritma logistik regresi dan setel parameter-parameternya sesuai kebutuhan.
+9. Mengevaluasi data menggunakan data pengujian untuk mengukur kinerja model menggunakan metrik seperti akurasi, presisi, recall, F1-score.
+10. Mencoba model prediksi untuk mengecek hasilnya sesuai atau tidak.
+11. Pengeimplementasian model setelah semuanya sesuai dan dievaluasi dengan baik, dapat digunakan untuk memprediksi penyakit diabetes pada data baru.
+12. Menyimpan model menggunakan library pickle dengan format file 'sav'.
     ```python
     import pickle
 
