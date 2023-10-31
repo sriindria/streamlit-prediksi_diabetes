@@ -22,7 +22,7 @@ Referensi :<br>
 Tujuan bisnis dari proyek ini adalah untuk memanfaatkan data mining guna memprediksi apakah seseorang berisiko menderita diabetes atau tidak. Informasi ini dapat digunakan untuk penyuluhan kesehatan, pencegahan, dan perawatan yang lebih tepat sasaran.
 
 ### Problem Statements
-Masalah utama yang ingin kita selesaikan adalah kesulitan dalam mengidentifikasi faktor-faktor yang dapat mempengaruhi risiko seseorang terkena diabetes. Kita ingin memahami pola dan faktor risiko yang berkaitan dengan diabetes melalui analisis data yang tepat.
+Masalah utama yang ingin diselesaikan adalah kesulitan dalam mengidentifikasi faktor-faktor yang dapat mempengaruhi risiko seseorang terkena diabetes. Kita ingin memahami pola dan faktor risiko yang berkaitan dengan diabetes melalui analisis data yang tepat.
 
 ### Goals
 - Mengimplementasikan algoritma regresi logistik untuk membangun model prediksi diabetes yang dapat mengklasifikasikan individu menjadi dua kelompok: berisiko diabetes atau tidak berisiko diabetes.
@@ -73,12 +73,34 @@ Hasil visualisasi hubungan antara semua pasangan variabel dalam dataset dalam be
 ## Data Preparation
 Penggunaan algoritma logistik regresi untuk prediksi penyakit diabetes, teknik persiapan data mencakup langkah-langkah yang saya lakukan ialah :
 1. Mencari dataset yang berisi informasi tentang pasien, termasuk variabel seperti usia, indeks massa tubuh (BMI), tingkat gula darah, riwayat keluarga, dll.
-2. Memvisualisasikan data untuk memilih fitur atau variabel yang paling relevan untuk prediksi penyakit diabetes.
-4. Membagi dataset menjadi dua bagian, yaitu data pelatihan (training data) dan data pengujian (testing data) untuk mengukur kinerja model.
-5. Membuat model dengan algoritma logistik regresi dan setel parameter-parameternya sesuai kebutuhan.
-6. Mengevaluasi data menggunakan data pengujian untuk mengukur kinerja model menggunakan metrik seperti akurasi, presisi, recall, F1-score.
-7. Mencoba model prediksi untuk mengecek hasilnya sesuai atau tidak.
-8. Pengeimplementasian model setelah semuanya sesuai dan dievaluasi dengan baik, dapat digunakan untuk memprediksi penyakit diabetes pada data baru.<br>
+2. Memilih library yang sesuai untuk digunakan.
+   ```python
+   import pandas as pd
+   import numpy as npimport matplotlib.pyplot as plt
+   import seaborn as sns
+   import plotly.express as px
+   from sklearn.linear_model import LogisticRegression
+   from sklearn.model_selection import train_test_split
+   from sklearn import metrics
+   from sklearn.metrics import accuracy_score
+   from sklearn.preprocessing import StandardScaler
+   ```
+3. Membersihkan data dengan mengecek nilai-nilai null untuk mengindentifikasi pola kekosongan atau kekurangan dalam dataset.
+4. Memvisualisasikan data untuk memilih fitur atau variabel yang paling relevan untuk prediksi penyakit diabetes.
+5. Memisahkan data atribut dengan label yang akan digunakan.
+6. Membagi dataset menjadi dua bagian, yaitu data pelatihan (training data) dan data pengujian (testing data) untuk mengukur kinerja model.
+7. Membuat model dengan algoritma logistik regresi dan setel parameter-parameternya sesuai kebutuhan.
+8. Mengevaluasi data menggunakan data pengujian untuk mengukur kinerja model menggunakan metrik seperti akurasi, presisi, recall, F1-score.
+9. Mencoba model prediksi untuk mengecek hasilnya sesuai atau tidak.
+10. Pengeimplementasian model setelah semuanya sesuai dan dievaluasi dengan baik, dapat digunakan untuk memprediksi penyakit diabetes pada data baru.
+11. Menyimpan model menggunakan library pickle dengan format file 'sav'.
+    ```python
+    import pickle
+
+    filename = 'prediksi_diabetes.sav'
+
+    pickle.dump(model, open(filename, 'wb'))
+    ```
 Tahapan data preparation adalah dasar yang diperlukan untuk memastikan bahwa analisis data mining prediksi diabetes menggunakan algoritma logistik regresi dapat dilakukan dengan akurat dan hasil yang dapat diandalkan.
 
 ## Modeling Learning Regression
